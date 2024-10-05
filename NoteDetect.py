@@ -81,12 +81,12 @@ while True:
                     print("Note Detected")
                     
                     #put value functions here
-                    sd.putValue("NoteX", int(x))
-                    sd.putValue("NoteY", int(y))
-                    sd.putBoolean("NoteDetected", True)
+                    sd.putValue("note_x", int(x))
+                    sd.putValue("note_y", int(y))
+                    sd.putBoolean("noteDetected", True)
             
     if str(contours) == "()":
-        sd.putBoolean("NoteDetected", False)
+        sd.putBoolean("noteDetected", False)
         print("No Note")
 
     """
